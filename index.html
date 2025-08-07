@@ -1,156 +1,89 @@
-<!-- Fuente Montserrat -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seatly – Reserva tu lugar para ver el partido</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #1B1D36;
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-<style>
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    color: #212322;
-    margin: 0;
-    padding: 0;
-  }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #212322;
+    }
 
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
+    header img {
+      height: 40px;
+      margin-right: 1rem;
+    }
 
-  .hero {
-    background-color: #1B1D36;
-    color: white;
-    text-align: center;
-    padding: 4rem 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    margin-bottom: 3rem;
-  }
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
 
-  .hero img {
-    max-width: 160px;
-    margin-bottom: 2rem;
-  }
+    main {
+      flex: 1;
+      padding: 2rem;
+      text-align: center;
+    }
 
-  .hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-
-  .hero p {
-    font-size: 1.2rem;
-    color: #D7A048;
-    margin-bottom: 2rem;
-  }
-
-  .cta-button {
-    background-color: #D7A048;
-    color: #1B1D36;
-    padding: 0.75rem 1.5rem;
-    border-radius: 9999px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-  }
-
-  .cta-button:hover {
-    background-color: #b67f2c;
-  }
-
-  section {
-    background-color: #F9F9F9;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  }
-
-  section h2 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #1B1D36;
-  }
-
-  section p,
-  section li {
-    font-size: 1rem;
-    color: #212322;
-    line-height: 1.6;
-  }
-
-  ol, ul {
-    padding-left: 1.2rem;
-  }
-
-  ul li::marker {
-    color: #D7A048;
-    font-weight: bold;
-  }
-
-  footer {
-    text-align: center;
-    font-size: 0.9rem;
-    color: #9D9C9E;
-    padding: 2rem 1rem;
-  }
-
-  @media (max-width: 600px) {
-    .hero h1 {
+    main h2 {
       font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #D7A048;
     }
-    section {
-      padding: 1.5rem;
+
+    main p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      color: #9D9C9E;
     }
-  }
-</style>
 
-<div class="container">
-  <!-- HERO -->
-  <div class="hero">
-    <img src="https://firebasestorage.googleapis.com/v0/b/ido10s.appspot.com/o/seatly-logo.png?alt=media" alt="Seatly logo">
-    <h1>¡Vive el fútbol como nunca!</h1>
-    <p>Encuentra bares que transmiten el partido y reserva tu lugar en segundos con Seatly.</p>
-    <a class="cta-button" href="mailto:contacto@seatlyapp.com">Quiero ser el primero en enterarme</a>
-  </div>
+    .promo-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
 
-  <!-- ¿Qué es Seatly? -->
-  <section>
-    <h2>¿Qué es Seatly?</h2>
-    <p>Seatly es una app que conecta a los fanáticos del fútbol con bares que transmiten los partidos en vivo. Con solo unos clics, puedes reservar tu lugar, pagar en línea y disfrutar con tus amigos. Sin filas, sin estrés. Solo fútbol con buen ambiente.</p>
-  </section>
+    footer {
+      padding: 1rem;
+      background-color: #212322;
+      text-align: center;
+      color: #9D9C9E;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
 
-  <!-- ¿Cómo funciona? -->
-  <section>
-    <h2>¿Cómo funciona?</h2>
-    <ol>
-      <li>Explora los partidos disponibles</li>
-      <li>Elige el bar que lo transmite</li>
-      <li>Reserva tu mesa y paga desde tu celular</li>
-      <li>Disfruta con tus amigos</li>
-    </ol>
-  </section>
+  <header>
+    <img src="logo.png" alt="Seatly Logo" />
+    <h1>Seatly</h1>
+  </header>
 
-  <!-- Ventajas -->
-  <section>
-    <h2>¿Por qué usar Seatly?</h2>
-    <ul>
-      <li>Evita filas y lugares llenos</li>
-      <li>Asegura tu lugar con anticipación</li>
-      <li>Paga fácil y seguro desde tu celular</li>
-      <li>Recibe promociones exclusivas para cada partido</li>
-    </ul>
-  </section>
+  <main>
+    <h2>Reserva tu lugar para vivir el partido</h2>
+    <p>Encuentra bares cercanos que transmiten tu partido favorito y asegura tu lugar con un par de clics. Seatly te conecta con la mejor experiencia para ver deportes.</p>
+    <img src="promo.jpg" alt="Personas viendo un partido en un restaurante" class="promo-image" />
+  </main>
 
-  <!-- Lanzamiento -->
-  <section>
-    <h2>¿Cuándo estará disponible?</h2>
-    <p>Seatly estará disponible muy pronto en iOS y Android. Déjanos tu correo y sé el primero en enterarte del lanzamiento.</p>
-    <a class="cta-button" href="mailto:contacto@seatlyapp.com">Notificarme</a>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    © 2025 Seatly · Monterrey, México · contacto@seatlyapp.com
+    &copy; 2025 Seatly. Todos los derechos reservados.
   </footer>
-</div>
+
+</body>
+</html>
